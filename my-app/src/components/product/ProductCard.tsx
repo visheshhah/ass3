@@ -23,7 +23,7 @@ export default function ProductCard({ id, title, price, category, description, i
 
                 
                 <button className="bg-blue-600 text-white px-2 rounded mt-2 mr-2" onClick={() => addToCart({id: id, name: title, stock:1, price: price, category:category})}>Add to Cart</button>
-                <NavLink to={`/shop/product/${id}}`}>
+                <NavLink to={`/shop/products/${id}`}>
                     <button className="bg-yellow-600 text-white px-2 rounded mt-2" >View Details</button>
                 </NavLink>
 
