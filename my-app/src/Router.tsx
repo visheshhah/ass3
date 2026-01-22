@@ -14,19 +14,35 @@ export const router = createBrowserRouter([
   {
     path: "/",
     element: <DashboardLayout/>,
+    errorElement: <ErrorPage/>,
     children:[
-        {index: true, element: <Dashboard/>},
-        { path: "shop/products", element: <Products /> }, 
-        { path: "shop/products/:id", element: <ProductDetails /> },
-        {path:"shop/cart", element:<Cart/>},
-        {path:"about", element:<About/>}
-
-    ]
+        {
+          index: true, 
+          element: <Dashboard/>
+        },
+        { 
+          path: "shop",
+          children:[ 
+            {
+              path: "products",
+              element: <Products /> 
+            },
+            {
+              path: "products/:id",
+              element: <ProductDetails />
+            },
+            {
+              path:"cart", 
+              element:<Cart/>
+            }
+          ] 
+         },
+         {
+            path:"about", 
+            element:<About/>
+         },
+    ],
   },
-  {
-        path:"*",
-        element:<ErrorPage/>
-   }
 ]);
 
 /* / 
