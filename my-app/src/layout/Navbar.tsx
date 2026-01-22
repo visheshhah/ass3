@@ -20,8 +20,16 @@ export default function Navbar(){
             </span>
           )}
         </div>
-        <div><NavLink to={"/about"}>About</NavLink></div>
-        <div><NavLink to={"shop/products"}>Products</NavLink></div>
+        <div><NavLink to={"/about"} className={({ isActive }) =>
+            isActive
+              ? "text-white bg-blue-950 px-3 py-2 rounded"
+              : "text-white hover:text-blue-500 px-3 py-2"
+          }>About</NavLink></div>
+        <div><NavLink to={"shop/products"} className={({ isActive }) =>
+            isActive
+              ? "text-white bg-blue-950 px-3 py-2 rounded"
+              : "text-white hover:text-blue-500 px-3 py-2"
+          }>Products</NavLink></div>
       </nav>
     </>
   );
