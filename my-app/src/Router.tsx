@@ -8,7 +8,7 @@ import Products from './components/product/Products.tsx';
 import ProductDetails from './components/product/ProductDetails.tsx';
 import About from './components/About.tsx';
 import Cart from './components/Cart.tsx';
-import ErrorPage from './pages/Errorpage.tsx';
+import ErrorPage from './pages/ErrorPage.tsx';
 
 export const router = createBrowserRouter([
   {

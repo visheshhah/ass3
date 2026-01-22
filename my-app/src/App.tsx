@@ -1,6 +1,4 @@
 import { useState, useEffect } from 'react';
-import { ThemeContext } from './context/ThemeContext';
-import DisplayProducts from './pages/DisplayProduct';
 import { CartProvider } from './context/CartContext';
 import CartPage from './pages/CartPage';
 

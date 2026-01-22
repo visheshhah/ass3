@@ -1,4 +1,4 @@
-interface Product{
+/* interface Product{
     id: number;
     name: string;
     stock: number;
@@ -95,4 +95,4 @@ export default function DisplayProducts(){
             </div>
         </>
       )
-}
+} */
